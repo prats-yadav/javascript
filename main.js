@@ -1,9 +1,9 @@
 class Webseries {
-    constructor(title) {
+    constructor(title, director, stars, streamingOn) {
       this.title = title;
-      // this.director = director;
-      // this.stars = stars;
-      // this.streamingOn = streamingOn;
+      this.director = director;
+      this.stars = stars;
+      this.streamingOn = streamingOn;
       console.log("Inside webseries class");
     }
   
@@ -14,30 +14,31 @@ class Webseries {
       this._title = value;
     }
   
-    // get director() {
-    //   return this.director;
-    // }
-    // set director(newDirector) {
-    //   this.director = newDirector;
-    // }
+    get director() {
+      return this._director;
+    }
+    set director(value) {
+      this._director = value;
+    }
   
-    // get stars() {
-    //   return this.stars;
-    // }
-    // set stars(newStars) {
-    //   this.stars = newStars;
-    // }
-    // get streamingOn() {
-    //   return this.streamingOn;
-    // }
+    get stars() {
+      return this._stars;
+    }
+    set stars(value) {
+      this._stars = value;
+    }
+    get streamingOn() {
+      return this._streamingOn;
+    }
   
-    // set streamingOn(newStreamingOn) {
-    //   this.streamingOn = newStreamingOn;
-    // }
+    set streamingOn(value) {
+      this._streamingOn = value;
+    }
   }
   
-  let obj = new Webseries("New Web Series");
-//   obj.title();
-  console.log(obj.title);
-//console.log(title(webcard[0]));
-  
+  let obj = new Webseries("Breaking Bad","Vince Gilligan","Bryan Cranston", "Netflix");
+  console.log(obj.title, obj.director,obj.stars,obj.streamingOn);
+  for(var i in obj) {  
+    document.write("<p>" + obj[i] + "</p>");
+
+  }
