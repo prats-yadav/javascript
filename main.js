@@ -37,8 +37,11 @@ class Webseries {
   }
   
   let obj = new Webseries("Breaking Bad","Vince Gilligan","Bryan Cranston", "Netflix");
+//   let objName = ["Breaking Bad", "Game of Thrones","Mirzapur", "The Boys","Daredevil","The Walking Dead"]
   console.log(obj.title, obj.director,obj.stars,obj.streamingOn);
   for(var i in obj) {  
     document.write("<p>" + obj[i] + "</p>");
-
-  }
+   }
+//    objName.forEach(namearray => {
+//     document.getElementById('name').innerHTML = namearray   
+//    });

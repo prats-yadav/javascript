@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="css\to do list.css"> -->
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webseries</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<!-- <script type="text/javascript" src="main.js"></script> -->
+    </head>
+	
+<body>
+	
+	<div class="heading">
+		<h2>WEB SERIES</h2>
+	</div>
+
+	<div class="form">
+		<form id="myForm" action="/action">
+			<div class="input">
+				<label for="title">Title  : </label>
+				<input type="text" id="title" name="title" placeholder="title"></input>
+			</div>
+
+			<div class="input">
+				<label for="dirname">Director Name  : </label>
+				<input type="text" id="dirname" name="dirname" placeholder="director"></input>
+			</div>
+
+			<div class="input">
+				<label for="starname">Star Name  : </label>
+				<input type="text" id="starname" name="starname" placeholder="star"></input>
+			</div>
+
+			<div class="input">
+				<label for="streaming">Streaming On  : </label>
+				<select id="streaming" name="streaming">
+        <option value="prime">Amazon Prime</option>
+        <option value="netflix">Netflix</option>
+        <option value="sonyliv">Sony Liv</option>
+      </select>
+			</div>
+
+			<div class="input">
+				<button type="add" onclick=submit() value="Submit form">Add</button>
+			</div>
+
+		</form>
+
+	</div>
+
+
+
+	<div class="grid-container">
+		<div class="card">
+			<script type="text/javascript" src="main.js"></script>
+			<!-- <img src="/w3images/team2.jpg" alt="John" style"width:50%"> -->
+			<!-- <h3>Breaking Bad</h3>
+			<p class="title"> Vince Gilligan </p>
+			<p> Bryan Cranston</p>
+			<p> Netflix</p>
+			<div style="margin: 2px 0;">
+				<a href="#"><i class="fa fa-share"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</div> -->
+		</div>
+		<div class="card">
+			<h3 id="title">Game of Thrones</h3>
+			<p class="title" id="director">David Benioff</p>
+			<p id="star">Emilia Clarke</p>
+			<p id="platform">Netflix</p>
+			<div style="margin: 2px 0;">
+				<a href="#"><i class="fa fa-share"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</div>			
+		</div>
+		<div class="card">
+
+			<h3 id="title">Mirzapur</h3>
+			<p class="title" id="director">Puneet Krishna</p>
+			<p id="star">Pankaj Tripathi</p>
+			<p id="platform">AmazonPrime</p>
+			<div style="margin: 2px 0;">
+				<a href="#"><i class="fa fa-share"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</div>
+		</div>
+		<div class="card">
+
+			<h3 id="title">The Boys</h3>
+			<p class="title" id="director"> Eric Kripke </p>
+			<p id="star"> Karl Urban </p>
+			<p id="platform">AmazonPrime</p>
+			<div style="margin: 2px 0;">
+				<a href="#"><i class="fa fa-share"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</div>
+		</div>
+		<div class="card">
+
+			<h3>Daredevil</h3>
+			<p class="title">Drew Goddard</p>
+			<p>Charlie Cox</p>
+			<p>Netflix</p>
+			<div style="margin: 2px 0;">
+				<a href="#"><i class="fa fa-share"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</div>
+		</div>
+		<div class="card">
+
+			<h3>The Walking Dead</h3>
+			<p class="title">Frank Darabont</p>
+			<p>Andrew Lincoln</p>
+			<p>AMC</p>
+			<div style="margin: 2px 0;">
+				<a href="#"><i class="fa fa-share"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// An array with card elements
+    var card1 = ["abc", "abcd", "abcde", "abcdef"];
+     
+    // Loop through all the elements in the array 
+    for(var i in card1) {  
+        document.write("<p>" + card1[i] + "</p>");
+    }
+	</script>
+
+</body>
+</html>
