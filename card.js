@@ -44,9 +44,9 @@ let card = document.createElement('div');
 card.className = 'card shadow cursor-pointer';
 
 let cardBody = document.createElement('div');
-cardBody.className = 'card-body';
+cardBody.className = 'card';
 
-let title = document.createElement('h5');
+let title = document.createElement('h3');
 title.innerText = task.title;
 title.className = 'card-title';
 
@@ -61,7 +61,7 @@ star.className = 'card-star';
 let streamingOn = document.createElement('div');
 streamingOn.innerText = task.streamingOn;
 streamingOn.className = 'card-streamingOn';
-
+ 
 cardBody.appendChild(title);
 cardBody.appendChild(director);
 cardBody.appendChild(star);

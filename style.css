@@ -32,6 +32,18 @@ height:60vh;
     width: 62%;
     margin: auto;
 }
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-gap: 10px; */
+    background-color: #e9f0f5;
+    /* float: center; */
+    padding: 10px;
+    border: 1px solid red;
+    height: 88vh;
+    width: 62%;
+    margin: auto;
+}
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(138, 3, 3, 0.2);
@@ -101,7 +113,7 @@ height:60vh;
 }
 
 .button:hover,
-a:hover {
+.a:hover {
     opacity: 0.7;
 }
 
